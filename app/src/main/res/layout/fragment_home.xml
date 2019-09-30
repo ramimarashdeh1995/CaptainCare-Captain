@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/button_addRequest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_add_offer"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/add_post"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                tools:targetApi="m" />
+
+            <Button
+                android:id="@+id/button_addPaidOffer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button_add_offer"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/request_offer"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                tools:targetApi="m" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/darkBlue"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="visible"
+                tools:targetApi="lollipop" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--
+                     <android.support.v7.widget.GridLayout
+            android:id="@+id/grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardCars"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_4sdp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgroundpink"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_8sdp"
+                        app:srcCompat="@drawable/ic_car" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/cars"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardRestaurant"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="TODO"
+                        app:srcCompat="@drawable/ic_restaurant" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/restaurants"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardPhone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgroundgreen"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_7sdp"
+                        app:srcCompat="@drawable/ic_phone2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/phones"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardHelp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_4sdp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgroundblue"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_11sdp"
+                        app:srcCompat="@drawable/ic_customer_support" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/help_on_roads"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardCoffee"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_8sdp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgrounddarkblue"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_9sdp"
+                        app:srcCompat="@drawable/ic_coffee_shop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/coffee_shop"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardEntertainment"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_8sdp"
+
+                app:cardPreventCornerOverlap="false"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgroundred"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_8sdp"
+                        app:srcCompat="@drawable/ic_entertanment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/entertainment"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardInsurance"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_8sdp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/cerclebackgroundpurple"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Insurance Company"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardLegalServices"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_8sdp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgroundyellow"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_8sdp"
+                        app:srcCompat="@drawable/ic_legal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/legal_service"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardVip"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:foreground="?android:selectableItemBackground"
+                app:cardElevation="@dimen/_8sdp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:background="@drawable/cerclebackgrounddarkyellow"
+                        android:contentDescription="TODO"
+                        android:padding="@dimen/_6sdp"
+                        app:srcCompat="@drawable/ic_vip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/vip_customer_services"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.GridLayout>
+
+-->

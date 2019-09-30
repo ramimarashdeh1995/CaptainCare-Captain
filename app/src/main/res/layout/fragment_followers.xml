@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Fragments.Profile.FollowersAndFollowingAndBlock.FollowersFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_layout">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/indigo"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible"
+            tools:targetApi="lollipop" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleFollowers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</ScrollView>

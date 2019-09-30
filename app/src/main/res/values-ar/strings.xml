@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Captain Care</string>
+
+    <!--Todo Login activity -->
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="password">كلمة السر</string>
+    <string name="captainCheckLoginClass">تسجيل دخول</string>
+    <string name="don_t_hve_account">ليس لديك حساب ؟</string>
+    <string name="forget_password">هل نسيت كلمة السر ؟</string>
+    <string name="check_Phone_or_pasword">خطأ:رقم الهاتف او كلمة المرور غير صحيح</string>
+
+    <!--Todo SignUp Activity-->
+    <string name="check_code">تأكيد الرمز</string>
+    <string name="city">المدينة</string>
+    <string name="address">العنوان</string>
+    <string name="repeat_password">تأكيد كلمة المرور</string>
+    <string name="have_account">لديك حساب ؟</string>
+    <string name="license_image">صورة التصريح</string>
+    <string name="captain_name">اسم الكابتن</string>
+    <string name="signup">تسجيل</string>
+    <string name="register">تسجيل</string>
+    <string name="name">الاسم</string>
+    <string name="check_phone_number">خطأ:رقم الهاتف غير صحيح</string>
+    <string name="verification_code_error">خطأ:رمز التحقق غير صحيح</string>
+    <string-array name="Cities">
+        <item>Irbid</item>
+        <item>Ajloun</item>
+        <item>Jerash</item>
+        <item>Mafraq</item>
+        <item>Zarqa</item>
+        <item>Amman</item>
+        <item>Al-Salt</item>
+        <item>Madaba</item>
+        <item>Al-Karak</item>
+        <item>Tafilah</item>
+        <item>Ma`an</item>
+        <item>Aqaba</item>
+    </string-array>
+    <string name="next">التالي</string>
+    <string name="ok1">موافق</string>
+
+    <!--Todo Forget Password Activity -->
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="save">حفظ</string>
+
+    <!--Todo Fragments Titles-->
+    <string name="home_page">الرئيسية</string>
+    <string name="my_profile">الصفحة الشخصية</string>
+    <string name="forget_password_title">تغير كلمة السر</string>
+    <string name="edit_profile">تعديل المعلومات الشخصية</string>
+
+    <!--Todo Navigation Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Todo Navigation Menu Name-->
+    <string name="home">الرئيسية</string>
+    <string name="requests_history">طلباتي</string>
+    <string name="notifications">تنبيهاتي</string>
+    <string name="favorite_offer">العروض المفضلة</string>
+    <string name="current_offers">العروض الحالية</string>
+    <string name="change_subsections"> تغيير تفاصيل الاشتراك</string>
+    <string name="sign_out">تسجيل خروج</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="add_credit">اضف رصيد</string>
+
+    <!--Todo send request server -->
+    <string name="Send_ruquest">تسجيل ...</string>
+
+    <string name="choose_service">اختر الخدمة</string>
+    <string name="cancel">الغاء</string>
+
+    <!-- TODO : Error Message From Server -->
+    <string name="problemHappened">حدثت مشكلة .. حاول مرة اخرى</string>
+    <string name="phone_number_registered">رقم الهاتف مسجّل من قبل</string>
+    <string name="messageNumbertemp"> رقم الهاتف مسجل بالفعل .. يرجى الانتظار لتفعييل الحساب</string>
+    <string name="check_internet_connection">خطأ: تأكد من الاتصال بالانترنت</string>
+
+    <!--TODO : Dialog Successful Regestration Process-->
+    <string name="showSuccessful">تم التسجيل بنجاح</string>
+    <string name="messageSuccessful">تم إرسال طلبك بنجاح ، يرجى الانتظار لتنشيط حسابك</string>
+    <string name="ok">حسنا</string>
+
+    <!--TODO : Profile Fragment-->
+    <string name="personal_info">المعلومات الشخصية</string>
+    <string name="rate">التقيم</string>
+    <string name="following">يتابع</string>
+    <string name="followers">المتابعون</string>
+    <string name="blockers">المحظورين</string>
+    <string name="about_me">من أنا</string>
+    <string name="update">تعديل</string>
+    <string name="follow">متابعة</string>
+    <string name="mobile">رقم الهاتف</string>
+    <string name="serial_number">الرقم التسلسلي</string>
+    <string name="subsections_type">نوع الاشتراك</string>
+    <string name="subsections_details">تفاصيل الاشتراك</string>
+    <string name="push_request">الاشعارات المتاحة</string>
+    <string name="number_add_post">الطلبات المتاحة </string>
+
+    <!--TODO : Add Free Offer Activity-->
+    <string name="offer_end_time">وقت انتهاء العرض</string>
+    <string name="add_post">اضف طلبك</string>
+    <string name="request_title">عنوان الطلب</string>
+    <string name="request_description">تفاصيل الطلب</string>
+
+    <!--TODO : Add Paid Offer Activity-->
+    <string name="request_offer">ارسل طلبك</string>
+    <string name="request_now">اطلب الآن</string>
+    <string name="request_end_time">وقت انتهاء الطلب</string>
+    <string name="request_end_date">تاريخ انتهاء الطلب</string>
+
+    <!--TODO Language -->
+
+    <!--TODO :Offer Details  Activity -->
+    <string name="offer_details">تفاصيل الاعلان</string>
+    <string name="accept_offer">قبول الاعلان</string>
+
+    <!--TODO Offer Fragment-->
+    <string name="offer">عرض</string>
+    <string name="add_to_favorite">اضف الى المفضلة</string>
+    <string name="remove">حذف</string>
+
+    <!--TODO Offers-->
+    <string name="title">العنوان</string>
+    <string name="description">الوصف</string>
+    <string name="service_type2">نوع الخدمة</string>
+    <string name="successful_offer">تم اضافة العرض بنجاح</string>
+
+    <!--TODO Offer Edit Activity-->
+    <string name="delete_offer">انهاء الطلب</string>
+
+    <!--TODO My Offers-->
+    <string name="you_don_t_have_any_request">ليس لديك اي طلبات</string>
+
+    <!--TODO Dialog Log out-->
+    <string name="titel_dialog_log_out">هل تريد تسجيل الخروج ؟</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="Cancel">إلغاء</string>
+    <string name="yes">نعم</string>
+
+    <!--TODO Follow / Un-Follow / Block/ layouts-->
+    <string name="un_block">الغاء الحظر</string>
+    <string name="unfollow">الغاء متابعة</string>
+    <string name="block">حظر</string>
+
+    <!-- TODO Setting Fragment-->
+    <string name="online">نشط الان</string>
+    <string name="offline">غير نشط</string>
+    <string name="arabic">العربية</string>
+    <string name="english">الانجليزية</string>
+    <string name="change_password">تعديل كلمه المرور</string>
+    <string name="language">اللغه</string>
+
+
+    <string name="alert_message">رسالة تنبيه</string>
+    <string name="verification_code">كود التحقق</string>
+    <string name="add_photo">اضافة صورة</string>
+
+
+    <string name="price_needes">السعر المطلوب</string>
+
+    <string name="h2">2 ساعه</string>
+    <string name="h4">4 ساعات</string>
+    <string name="h8">8 ساعات</string>
+    <string name="h12">12 ساعه</string>
+    <string name="h24">24 ساعه</string>
+    <string name="h72">72 ساعه</string>
+
+
+    <string name="cc_coins">رصيد الكتروني</string>
+
+    <string name="ditails_sub">تفاصيل</string>
+
+    <string name="setting1">الاعدادات</string>
+    <string name="typesubsecribe">اختر نوع الاشتراك</string>
+
+    <string name="end_after">صالح لغايه</string>
+    <string name="price_subsecribe">التكلفه</string>
+    <string name="subscribe">اشتراك</string>
+
+    <string name="offerfinish">طلب منتهي الصلاحية</string>
+
+
+
+    <string name="day">ايام</string>
+    <string name="month">اشهر</string>
+    <string name="end_service">انهاء الخدمه</string>
+    <string name="buy">شراء</string>
+
+
+
+
+    <string name="accept_offer_dialog">هل انت متاكد من قبول العرض والذهاب الى  </string>
+    <string name="go_now">الذهاب الان</string>
+    <string name="go_latar">الذهاب لاحقا</string>
+    <string name="backe">عوده</string>
+    <string name="jd">دأ</string>
+    <string name="going_offer">هل تريد الذهاب الى :</string>
+    <string name="offer_end_after">ينتهي تالعرض بعد :</string>
+
+
+    <string name="your_rate">تقيمك للخدمه</string>
+
+    <string name="you_do_not_have_any_favorite_offers">ليس لديك عروض مفضلة</string>
+    <string name="you_currently_have_no_offers">ليس لديك عروض حاليا</string>
+    <string name="no_offers">لا يوجد عروض</string>
+    <string name="location">الموقع</string>
+    <string name="you_do_not_have_notification">لا يوجد لديك اشعارات</string>
+    <string name="please_wait">انتظر قليلا ...</string>
+    <string name="profile">المعلومات الشخصية</string>
+
+    <string name="requierd_field">يرجى ملئ الحقل</string>
+    <string name="enter_valid_phone">ارخل رقم هاتف صحيح</string>
+    <string name="enter_valid_pass">ادخل كلمة مرور صحيحة</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="sending_code">جاري ارسال رمز التحقق ...</string>
+    <string name="checking_code">جاري التأكد من الرمز المدخل ...</string>
+    <string name="exit_app">هل انت متأكد من اغلاق التطبيق</string>
+    <string name="camera">الكاميرا</string>
+    <string name="gallery">الاستديو</string>
+    <string name="choose">اختر</string>
+    <string name="this_notification_is_end">هذا الطلب منتهي</string>
+    <string name="email">البريد الالكتروني</string>
+
+</resources>

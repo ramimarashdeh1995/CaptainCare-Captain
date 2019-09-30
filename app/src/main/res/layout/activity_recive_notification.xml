@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification.ReciveNotification">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/typeOffer"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_25sdp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/captain_care_logo2"/>
+            <TextView
+                android:id="@+id/pirce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 JD"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_25sdp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/going_offer"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_20sdp"/>
+            <TextView
+                android:id="@+id/addressdialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offer_end_after"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_20sdp"/>
+            <TextView
+                android:id="@+id/timeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+
+                android:id="@+id/loginvindor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+
+                <Button
+                    android:id="@+id/finishdialog"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/custom_button_text_color"
+                    android:background="@drawable/custom_button_add_offer"
+                    android:drawableStart="@drawable/custom_icon_delete"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="@string/remove"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/custom_button_text_color"
+                    android:background="@drawable/custom_button_add_offer"
+                    android:drawableStart="@drawable/custom_icon_favorite"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="@string/add_to_favorite"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnAccept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_add_offer"
+                    android:drawableStart="@drawable/ic_accept_green"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="@string/accept_offer"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/custom_button_text_color"
+                    tools:ignore="ButtonStyle"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/logincaptain1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/finishdialogcaptain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:textColor="@drawable/custom_button_text_color"
+                    android:background="@drawable/custom_button_add_offer"
+                    android:drawableStart="@drawable/custom_icon_delete"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="@string/remove"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnAcceptcaptain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_add_offer"
+                    android:drawableStart="@drawable/ic_accept_green"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:text="@string/accept_offer"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/custom_button_text_color"
+                    android:textSize="@dimen/_13ssp"
+                    tools:ignore="ButtonStyle"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/typeRank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_100ssp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/imgPersonalreat"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/sergio"
+                android:layout_margin="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/namedialograte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_13ssp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_25sdp"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_rate"
+                android:textAllCaps="false"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:layout_gravity="center"
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+            <ProgressBar
+                android:id="@+id/progressrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_10sdp"/>
+
+            <Button
+                android:id="@+id/btnRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_style"
+                android:text="@string/rate"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradiant_layout">
+        <ImageView
+            android:id="@+id/imagenotificationBig"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/nameAppBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Captain Care"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@id/imagenotificationBig"
+            />
+        <TextView
+            android:id="@+id/titleMessageBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept You Offer "
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@id/imagenotificationBig"
+            android:layout_below="@id/nameAppBig"
+            />
+        <!--<TextView-->
+            <!--android:id="@+id/timeMessagebig"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="After 1 H"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="@dimen/_15sdp"-->
+            <!--/>-->
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/rankuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.51"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+
+            />
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/blue"
+            android:background="@drawable/ic_rank"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_toEndOf="@id/rankuser"
+            />
+        <!--<TextView-->
+            <!--android:id="@+id/cost"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="15.5 JD"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textColor="@color/blue"-->
+            <!--android:layout_marginStart="@dimen/_10sdp"-->
+            <!--android:layout_marginTop="@dimen/_3sdp"-->
+            <!--android:layout_toEndOf="@id/star"-->
+            <!--/>-->
+        <TextView
+            android:id="@+id/addressnotification"
+            android:layout_below="@id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_13sdp"
+            android:textSize="12dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+
+            />
+        <TextView
+            android:id="@+id/discraptionBig"
+            android:layout_below="@id/addressnotification"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:textSize="10dp"
+            android:text="desctaption"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            />
+
+        <ImageView
+            android:id="@+id/imagenotificationBig_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/discraptionBig"
+
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/finishdialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:textColor="@drawable/custom_button_text_color"
+            android:background="@drawable/custom_button_add_offer"
+            android:drawableStart="@drawable/custom_icon_delete"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/add_to_favorite"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_add_offer"
+            android:drawableStart="@drawable/ic_accept_green"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/accept_offer"
+            android:textAllCaps="false"
+            android:textColor="@drawable/custom_button_text_color"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="ButtonStyle"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

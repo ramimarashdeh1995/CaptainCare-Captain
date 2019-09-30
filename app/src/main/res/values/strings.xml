@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">Captain Care</string>
+
+    <!--Todo : Login activity -->
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="captainCheckLoginClass">Login</string>
+    <string name="don_t_hve_account">Don`t hve Account ?</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="check_Phone_or_pasword">Error : Phone Number or Password Not Correct</string>
+
+    <!--Todo : SignUp Activity-->
+    <string name="check_code">Check Code</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="repeat_password">Confirm Password</string>
+    <string name="have_account">Have Account ?</string>
+    <string name="license_image">License Image</string>
+    <string name="captain_name">Captain Name</string>
+    <string name="signup">SignUp</string>
+    <string name="name">Name</string>
+    <string name="register">Registar</string>
+    <string name="check_phone_number">Error : Check Phone Number</string>
+    <string name="verification_code_error">Error Verification Code</string>
+    <string-array name="Cities">
+        <item>Irbid</item>
+        <item>Ajloun</item>
+        <item>Jerash</item>
+        <item>Mafraq</item>
+        <item>Zarqa</item>
+        <item>Amman</item>
+        <item>Al-Salt</item>
+        <item>Madaba</item>
+        <item>Al-Karak</item>
+        <item>Tafilah</item>
+        <item>Ma`an</item>
+        <item>Aqaba</item>
+    </string-array>
+    <string name="next">Next</string>
+    <string name="ok1">OK</string>
+
+    <!--Todo Forget Password Activity -->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="save">Save</string>
+
+    <!--Todo Fragments Titles-->
+    <string name="home_page">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="forget_password_title">Forget Password</string>
+    <string name="edit_profile">Edit Profile</string>
+
+
+    <!--Todo Navigation Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Todo Navigation Menu Name-->
+    <string name="home">Home</string>
+    <string name="requests_history">Requests History</string>
+    <string name="notifications">Notifications</string>
+    <string name="favorite_offer">Favorite Offers</string>
+    <string name="current_offers">Current Offers</string>
+    <string name="change_subsections">Change Subscription</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="add_credit">Add credit</string>
+    <string name="sign_out">Sign Out</string>
+
+    <!--Todo send request server -->
+    <string name="Send_ruquest">Registration ...</string>
+
+    <!--Todo : google maps key-->
+
+    <!--TODO Dialog service-->
+    <string name="choose_service">Choose Service</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- TODO : Error Message From Server -->
+    <string name="problemHappened">A problem happened .. Retry Again</string>
+    <string name="phone_number_registered">Phone number Already Registered</string>
+    <string name="messageNumbertemp">Phone number already register .. Please wait to Active Account</string>
+    <string name="check_internet_connection">Error : Check Internet Connection</string>
+
+    <!--TODO : Dialog Successful Registration Process-->
+    <string name="showSuccessful">Successful Registration</string>
+    <string name="messageSuccessful">Your Request has been successfully sent, Please wait for activation your Account</string>
+    <string name="ok">OK</string>
+
+    <!--TODO : Profile Fragment-->
+    <string name="personal_info">Personal Info</string>
+    <string name="rate">Rate</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="blockers">Block</string>
+    <string name="about_me">About Me</string>
+    <string name="mobile">Mobile</string>
+    <string name="update">Update</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="subsections_type">Subsections Type</string>
+    <string name="subsections_details">Subsections details</string>
+    <string name="push_request">Free Push Requests </string>
+    <string name="number_add_post">Free Add Requests </string>
+
+    <!--TODO : Add Free Offer Activity-->
+    <!--For Market-->
+    <string name="offer_end_time">Offer End Time</string>
+    <string name="price_needes">Needed price</string>
+    <!--For Captain-->
+    <string name="add_post">Add Request</string>
+    <string name="request_description">Request Description</string>
+
+    <!--TODO : Add Paid Offer Activity-->
+    <!--For Market-->
+    <!--For Captain-->
+    <string name="request_offer">Push Request</string>
+    <string name="request_now">Request Now</string>
+    <string name="request_end_time">Request End Time</string>
+    <string name="request_end_date">Request End Date</string>
+
+    <!-- TODO : Language-->
+
+    <!--TODO :Offer Details Activity -->
+    <string name="offer_details">Offer Details</string>
+    <string name="accept_offer">Accept Offer</string>
+
+    <!--TODO Offer Fragment-->
+    <string name="offer">Offer</string>
+    <string name="add_to_favorite">Add To Favorite</string>
+    <string name="remove">Remove</string>
+
+    <!--TODO Offers-->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="service_type2">Service Type</string>
+    <string name="successful_offer">Offer successfully added</string>
+
+    <!--TODO Offer Edit Activity-->
+
+    <string name="delete_offer">Finish Offer</string>
+
+    <!--TODO My Offers-->
+    <string name="you_don_t_have_any_request">You Don`t have any Request</string>
+
+    <!--TODO Dialog Log out-->
+    <string name="titel_dialog_log_out">Are you sure want Sign Out?</string>
+    <string name="log_out">Sign Out</string>
+    <string name="Cancel">Cancel</string>
+    <string name="yes">Yes</string>
+
+    <!--TODO Follow / Un-Follow / Block/ layouts-->
+    <string name="follow">Follow</string>
+    <string name="un_block">Un-Block</string>
+    <string name="unfollow">Un-Follow</string>
+    <string name="block">Block</string>
+
+    <!--TODO Setting Fragment-->
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="change_password">Change Password</string>
+    <string name="language">Language</string>
+
+    <string name="alert_message">Alert Message</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="add_photo">Add Photo</string>
+
+
+    <string name="h2">2 Hours</string>
+    <string name="h4">4 Hours</string>
+    <string name="h8">8 Hours</string>
+    <string name="h12">12 Hours</string>
+    <string name="h24">24 Hours</string>
+    <string name="h72">72 Hours</string>
+
+    <string name="cc_coins">CC Coins</string>
+
+    <string name="ditails_sub">Details</string>
+
+    <string name="setting1">Settings</string>
+
+    <string name="typesubsecribe">Select Type</string>
+    <string name="end_after">Valid for</string>
+    <string name="price_subsecribe">Price</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="offerfinish">Request Expired</string>
+
+
+    <string name="day">Days</string>
+    <string name="month">Month</string>
+
+    <string name="end_service">End Service</string>
+    <string name="buy">Buy</string>
+
+    <string name="accept_offer_dialog">Are You Sure Accept The Offer and Go To </string>
+    <string name="go_now">Go Now</string>
+    <string name="go_latar">Go Later</string>
+    <string name="backe">Backe</string>
+    <string name="jd">JD</string>
+    <string name="going_offer">Do you going to : </string>
+    <string name="offer_end_after">Offer end After : </string>
+
+    <string name="your_rate">Your Rating For This Service</string>
+
+    <string name="you_do_not_have_any_favorite_offers">You Don`t Have Any Favorite Offers</string>
+    <string name="you_currently_have_no_offers">You Currently Have No Offers</string>
+    <string name="no_offers">No Offers</string>
+    <string name="location">Location</string>
+    <string name="you_do_not_have_notification">Don`t have Notification</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="request_title">Request Title</string>
+    <string name="please_wait">Please Wait ...</string>
+    <string name="profile">Personal Profile</string>
+
+    <string name="requierd_field">Required Field</string>
+    <string name="enter_valid_phone">Enter valid phone</string>
+    <string name="enter_valid_pass">Enter Valid Password</string>
+    <string name="password_does_not_match">Password does not match</string>
+    <string name="sending_code">Sending Code ...</string>
+    <string name="checking_code">Checking Code ...</string>
+    <string name="exit_app">Are you want Exit the App ?</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose">Choose</string>
+    <string name="this_notification_is_end">This Request is End</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.captaincare.captan_care">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+Allows the API to use WiFi or mobile cell data (or both) to determine the device's location.
+    The API returns the location with an accuracy approximately equivalent to a city block.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,UnusedAttribute">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Activities.SplachActivity"
+            android:theme="@style/AppThemeFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Activities.SignUpActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:screenOrientation="portrait"
+
+            android:name=".Activities.ForgetPasswordActivity"
+            android:label="@string/forget_password_title"
+            android:parentActivityName=".Activities.SignUpActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Activities.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppThemeNoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Activities.AddFreeOfferActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Activities.AddPaidOfferActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.OfferDetailsActivity"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Fragments.AddCredit.ShopingCC"
+            android:theme="@style/AppThemeNoActionBar" />
+
+        <activity
+            android:screenOrientation="portrait"
+
+            android:name=".Notification.ReciveNotification"
+            android:theme="@style/AppThemeFullScreen"/>
+
+
+        <service
+            android:screenOrientation="portrait"
+
+            android:name=".Notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

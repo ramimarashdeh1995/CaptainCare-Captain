@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691520667255",
+    "firebase_url": "https://captain-care-2.firebaseio.com",
+    "project_id": "captain-care-2",
+    "storage_bucket": "captain-care-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691520667255:android:0a906ce7e0f93631",
+        "android_client_info": {
+          "package_name": "com.captaincare.captan_care"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691520667255-hnid0goeduk6fieg2s93vr6ulvb40e46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4GN57hHtjm64ue4_oXc4EEKv685hax40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691520667255-hnid0goeduk6fieg2s93vr6ulvb40e46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

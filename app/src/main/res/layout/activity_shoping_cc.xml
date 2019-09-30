@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddCredit.ShopingCC">
+
+    <LinearLayout
+        android:id="@+id/waite1"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blue"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible"
+            tools:targetApi="lollipop" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/payment1"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/cc"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp" />
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:id="@+id/txtCostCCShoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+
+            android:layout_gravity="center"
+            android:id="@+id/txtFreeCCShoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_marginEnd="@dimen/_50sdp"
+
+            android:id="@+id/btnShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_add_offer"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/buy"
+            android:textAllCaps="false"
+            android:textColor="@drawable/custom_button_text_color"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="ButtonStyle"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
